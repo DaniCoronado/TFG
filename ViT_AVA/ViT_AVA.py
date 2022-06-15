@@ -95,7 +95,6 @@ a ajustar posteriormente
 
 learning_rate = 0.000001
 weight_decay = 0.0001
-batch_size = 256
 num_epochs = 30
 
 def run_experiment(model):
