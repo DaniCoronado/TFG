@@ -111,7 +111,7 @@ def run_experiment(model):
         ]
     )
 
-    checkpoint_filepath = "/tmp/checkpoint"
+    checkpoint_filepath = "checkpoint_vit/checkpoint"
     checkpoint_callback = keras.callbacks.ModelCheckpoint(
         checkpoint_filepath,
         monitor="val_mean_squared_error",
@@ -121,7 +121,6 @@ def run_experiment(model):
 
     history = model.fit(
         x= x_train,
-        batch_size=batch_size,
         epochs=num_epochs,
         validation_data=x_val,
         callbacks=[checkpoint_callback],
@@ -135,5 +134,5 @@ def run_experiment(model):
 
 history = run_experiment(model)
 
-with open('mypickle.pickle', 'wb') as f:
+with open('outputs_vit_ava.pickle', 'wb') as f:
     pickle.dump(history, f)
