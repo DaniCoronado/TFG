@@ -84,7 +84,7 @@ x_val = tf.data.Dataset.from_tensor_slices((avaRegression.val_image_paths, avaRe
 inputs = layers.Input(shape=input_shape)
 # augmented = data_augmentation(inputs)
 features = convmixer_model(inputs)
-logits = keras.layers.Dense(10)(features)
+logits = keras.layers.Dense(1)(features)
 model = keras.Model(inputs=inputs, outputs=logits)
 model.summary()
 
