@@ -1,0 +1,325 @@
+2022-06-21 18:19:17.933717: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:19:17.933967: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:19:17.934025: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:19:17.934908: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-06-21 18:19:17.935723: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:19:17.935809: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:19:17.935860: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:41:16.294311: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:41:16.294438: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:41:16.294497: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-06-21 18:41:16.294553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9407 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3080 Ti, pci bus id: 0000:01:00.0, compute capability: 8.6
+2022-06-21 18:41:17.289766: I tensorflow/stream_executor/cuda/cuda_dnn.cc:369] Loaded cuDNN version 8005
+2022-06-21 18:41:19.762249: W tensorflow/stream_executor/gpu/asm_compiler.cc:231] Falling back to the CUDA driver for PTX compilation; ptxas does not support CC 8.6
+2022-06-21 18:41:19.762264: W tensorflow/stream_executor/gpu/asm_compiler.cc:234] Used ptxas at ptxas
+2022-06-21 18:41:19.763289: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Unimplemented: ptxas ptxas too old. Falling back to the driver to compile.
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2022-06-21 18:41:20.819730: I tensorflow/stream_executor/cuda/cuda_blas.cc:1760] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+All PyTorch model weights were used when initializing ConvMixer.
+All the weights of ConvMixer were initialized from the PyTorch model.
+
+Model: "conv_mixer"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+sequential (Sequential)      (1, 32, 32, 768)          116736    
+_________________________________________________________________
+blocks/0 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/1 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/2 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/3 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/4 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/5 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/6 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/7 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/8 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/9 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/10 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/11 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/12 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/13 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/14 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/15 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/16 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/17 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/18 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/19 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/20 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/21 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/22 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/23 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/24 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/25 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/26 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/27 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/28 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/29 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/30 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/31 (Block)            multiple                  635136    
+_________________________________________________________________
+global_average_pooling2d (Gl multiple                  0         
+_________________________________________________________________
+flatten (Flatten)            multiple                  0         
+_________________________________________________________________
+head (Dense)                 multiple                  769000    
+=================================================================
+Total params: 21,210,088
+Trainable params: 21,110,248
+Non-trainable params: 99,840
+_________________________________________________________________
+Datasets ready !
+Train set size :  (187938,) (187938, 1)
+Validation set size :  (46985,) (46985, 1)
+Test set size :  (20429,) (20429, 1)
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+conv_mixer (ConvMixer)       (None, 1000)              21210088  
+_________________________________________________________________
+dense (Dense)                (None, 1)                 1001      
+=================================================================
+Total params: 21,211,089
+Trainable params: 21,111,249
+Non-trainable params: 99,840
+_________________________________________________________________
+Epoch 1/20
+2022-06-21 18:41:23.724124: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+ 1961/11747 [====>.........................] - ETA: 48:01 - loss: 0.8638 - mean_squared_error: 0.8638 - mean_absolute_error: 0.70932022-06-21 18:51:02.531945: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 41:20 - loss: 0.5948 - mean_squared_error: 0.5948 - mean_absolute_error: 0.5639Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:45 - loss: 0.4863 - mean_squared_error: 0.4863 - mean_absolute_error: 0.49572022-06-21 19:01:52.623265: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:40 - loss: 0.3661 - mean_squared_error: 0.3661 - mean_absolute_error: 0.41192022-06-21 19:09:49.079567: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 21:10 - loss: 0.2981 - mean_squared_error: 0.2981 - mean_absolute_error: 0.36102022-06-21 19:17:14.316819: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:15 - loss: 0.2190 - mean_squared_error: 0.2190 - mean_absolute_error: 0.29842022-06-21 19:32:04.162168: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.2006 - mean_squared_error: 0.2006 - mean_absolute_error: 0.2827Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.1974 - mean_squared_error: 0.1974 - mean_absolute_error: 0.2798Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3704s 315ms/step - loss: 0.1974 - mean_squared_error: 0.1974 - mean_absolute_error: 0.2798 - val_loss: 160171040.0000 - val_mean_squared_error: 160171040.0000 - val_mean_absolute_error: 1939.4755
+Epoch 2/20
+ 1961/11747 [====>.........................] - ETA: 47:28 - loss: 0.0184 - mean_squared_error: 0.0184 - mean_absolute_error: 0.11712022-06-21 19:52:37.532019: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 41:08 - loss: 0.0170 - mean_squared_error: 0.0170 - mean_absolute_error: 0.1124Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:37 - loss: 0.0162 - mean_squared_error: 0.0162 - mean_absolute_error: 0.10932022-06-21 20:03:29.693453: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:36 - loss: 0.0148 - mean_squared_error: 0.0148 - mean_absolute_error: 0.10372022-06-21 20:11:26.370621: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 21:08 - loss: 0.0137 - mean_squared_error: 0.0137 - mean_absolute_error: 0.09882022-06-21 20:18:51.795202: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:15 - loss: 0.0118 - mean_squared_error: 0.0118 - mean_absolute_error: 0.09012022-06-21 20:33:42.464057: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.0113 - mean_squared_error: 0.0113 - mean_absolute_error: 0.0875Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0112 - mean_squared_error: 0.0112 - mean_absolute_error: 0.0870Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3693s 314ms/step - loss: 0.0112 - mean_squared_error: 0.0112 - mean_absolute_error: 0.0870 - val_loss: 284194.0625 - val_mean_squared_error: 284194.0625 - val_mean_absolute_error: 299.3235
+Epoch 3/20
+ 1961/11747 [====>.........................] - ETA: 47:16 - loss: 0.0055 - mean_squared_error: 0.0055 - mean_absolute_error: 0.05922022-06-21 20:54:09.114169: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:54 - loss: 0.0054 - mean_squared_error: 0.0054 - mean_absolute_error: 0.0584Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:27 - loss: 0.0053 - mean_squared_error: 0.0053 - mean_absolute_error: 0.05812022-06-21 21:04:57.824611: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:30 - loss: 0.0052 - mean_squared_error: 0.0052 - mean_absolute_error: 0.05742022-06-21 21:12:54.378420: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 21:04 - loss: 0.0052 - mean_squared_error: 0.0052 - mean_absolute_error: 0.05712022-06-21 21:20:19.759344: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:14 - loss: 0.0051 - mean_squared_error: 0.0051 - mean_absolute_error: 0.05682022-06-21 21:35:09.947829: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.0051 - mean_squared_error: 0.0051 - mean_absolute_error: 0.0567Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0051 - mean_squared_error: 0.0051 - mean_absolute_error: 0.0567Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3687s 314ms/step - loss: 0.0051 - mean_squared_error: 0.0051 - mean_absolute_error: 0.0567 - val_loss: 0.0048 - val_mean_squared_error: 0.0048 - val_mean_absolute_error: 0.0547
+Epoch 4/20
+ 1961/11747 [====>.........................] - ETA: 47:12 - loss: 0.0051 - mean_squared_error: 0.0051 - mean_absolute_error: 0.05682022-06-21 21:55:35.259091: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:50 - loss: 0.0052 - mean_squared_error: 0.0052 - mean_absolute_error: 0.0569Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:23 - loss: 0.0052 - mean_squared_error: 0.0052 - mean_absolute_error: 0.05732022-06-21 22:06:22.832545: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:27 - loss: 0.0054 - mean_squared_error: 0.0054 - mean_absolute_error: 0.05792022-06-21 22:14:18.428179: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 21:02 - loss: 0.0055 - mean_squared_error: 0.0055 - mean_absolute_error: 0.05862022-06-21 22:21:42.810319: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:13 - loss: 0.0057 - mean_squared_error: 0.0057 - mean_absolute_error: 0.05972022-06-21 22:36:30.194683: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.0057 - mean_squared_error: 0.0057 - mean_absolute_error: 0.0599Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0057 - mean_squared_error: 0.0057 - mean_absolute_error: 0.0599Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3678s 313ms/step - loss: 0.0057 - mean_squared_error: 0.0057 - mean_absolute_error: 0.0599 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0621
+Epoch 5/20
+ 1961/11747 [====>.........................] - ETA: 46:51 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-21 22:56:48.884903: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:32 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:08 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06212022-06-21 23:07:32.036853: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:15 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-21 23:15:24.483364: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:53 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-21 23:22:45.817579: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:10 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-21 23:37:26.864524: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3652s 311ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0619
+Epoch 6/20
+ 1961/11747 [====>.........................] - ETA: 46:39 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-21 23:57:38.758159: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:21 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0617Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:58 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 00:08:18.760185: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:07 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 00:16:08.483650: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:47 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 00:23:27.230075: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:09 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 00:38:03.750740: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3635s 309ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 7/20
+ 1961/11747 [====>.........................] - ETA: 46:32 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 00:58:12.447467: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:16 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:53 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 01:08:51.332815: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:03 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 01:16:40.395394: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:45 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 01:23:58.762018: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:08 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 01:38:34.905610: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3631s 309ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0621
+Epoch 8/20
+ 1961/11747 [====>.........................] - ETA: 46:24 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 01:58:42.300922: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:09 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:47 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 02:09:19.266117: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:59 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 02:17:07.288189: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:41 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 02:24:24.410159: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:07 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 02:38:58.034856: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3621s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 9/20
+ 1961/11747 [====>.........................] - ETA: 46:21 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 02:59:03.213678: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:44 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 03:09:39.377285: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:57 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 03:17:26.674148: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:40 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 03:24:43.320294: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:07 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 03:39:16.157121: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3618s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 10/20
+ 1961/11747 [====>.........................] - ETA: 46:20 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 03:59:20.988080: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:05 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:44 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 04:09:57.127473: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:56 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 04:17:44.216600: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:39 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 04:25:00.694451: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06212022-06-22 04:39:33.192496: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3616s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 11/20
+ 1961/11747 [====>.........................] - ETA: 46:17 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 04:59:36.831029: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:03 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:41 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 05:10:12.149370: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:54 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 05:17:58.831630: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:38 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 05:25:15.153099: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 05:39:47.425625: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3614s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0619
+Epoch 12/20
+ 1961/11747 [====>.........................] - ETA: 46:16 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06182022-06-22 05:59:50.544569: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:02 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0617Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:40 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 06:10:25.684061: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:54 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 06:18:12.479346: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:38 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 06:25:28.561423: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 06:40:00.393962: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3613s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0621
+Epoch 13/20
+ 1961/11747 [====>.........................] - ETA: 46:20 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 07:00:04.258568: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:05 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0617Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:43 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 07:10:40.174920: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:56 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 07:18:27.175373: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:39 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 07:25:43.611991: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 07:40:16.189336: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3617s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0622
+Epoch 14/20
+ 1961/11747 [====>.........................] - ETA: 46:14 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 08:00:19.647658: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:39 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 08:10:54.438563: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:53 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 08:18:40.792553: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:37 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 08:25:56.518020: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 08:40:27.837010: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3611s 307ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 15/20
+ 1961/11747 [====>.........................] - ETA: 46:15 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 09:00:30.841505: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:01 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:40 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 09:11:05.862668: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:53 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 09:18:52.408372: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:38 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 09:26:08.396026: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 09:40:40.088435: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3612s 307ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 16/20
+ 1961/11747 [====>.........................] - ETA: 46:16 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 10:00:43.090935: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:02 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:40 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06212022-06-22 10:11:18.191713: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:54 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 10:19:04.741183: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:38 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 10:26:20.749994: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 10:40:52.656285: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3613s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 17/20
+ 1961/11747 [====>.........................] - ETA: 46:16 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06182022-06-22 11:00:56.133845: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:02 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0617Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:41 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 11:11:31.267213: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:54 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 11:19:17.929802: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:38 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 11:26:34.134864: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 11:41:06.047993: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3614s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0620 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0621
+Epoch 18/20
+ 1961/11747 [====>.........................] - ETA: 46:21 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 12:01:10.644840: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:07 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0618Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:45 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 12:11:47.025527: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:57 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 12:19:34.584611: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:40 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 12:26:51.337338: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:07 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 12:41:24.504520: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3619s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 19/20
+ 1961/11747 [====>.........................] - ETA: 46:31 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 13:01:31.884140: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:20 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0617Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:53 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 13:12:11.052611: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:01 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 13:19:57.918543: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:42 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 13:27:14.148999: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:07 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 13:41:46.023408: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3621s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+Epoch 20/20
+ 1961/11747 [====>.........................] - ETA: 46:16 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06182022-06-22 14:01:49.633927: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:02 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0617Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:41 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 14:12:24.966087: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:54 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 14:20:11.593950: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:38 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06192022-06-22 14:27:27.625611: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.06202022-06-22 14:41:59.366859: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3613s 308ms/step - loss: 0.0061 - mean_squared_error: 0.0061 - mean_absolute_error: 0.0619 - val_loss: 0.0061 - val_mean_squared_error: 0.0061 - val_mean_absolute_error: 0.0620
+1277/1277 [==============================] - 127s 99ms/step - loss: 0.0049 - mean_squared_error: 0.0049 - mean_absolute_error: 0.0551
+test loss, test MSE, test MAE: [0.004892939236015081, 0.004892939236015081, 0.055073875933885574]
+
