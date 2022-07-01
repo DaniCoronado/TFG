@@ -1,8 +1,0 @@
- Low Quality Test
- [(b'/srv/AVA-dataset/AVADataset/92380.jpg', 0.25479041916167666), (b'/srv/AVA-dataset/AVADataset/18732.jpg', 0.29506172839506173)] 
-
- Mid Quality Test
- [(b'/srv/AVA-dataset/AVADataset/131959.jpg', 0.3941463414634147), (b'/srv/AVA-dataset/AVADataset/852823.jpg', 0.5357142857142857)] 
-
- High Quality Test
- [(b'/srv/AVA-dataset/AVADataset/629882.jpg', 0.6790780141843973), (b'/srv/AVA-dataset/AVADataset/830372.jpg', 0.6938202247191011)]

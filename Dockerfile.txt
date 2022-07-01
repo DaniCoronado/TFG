@@ -1,3 +1,0 @@
-FROM gcr.io/kaggle-gpu-images/python:v109
-RUN pip install timm
-RUN pip install tfimm
