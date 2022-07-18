@@ -1,0 +1,274 @@
+2022-07-13 12:27:50.113626: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:27:50.113844: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:27:50.113900: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:27:50.114808: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-07-13 12:27:50.115395: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:27:50.115470: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:27:50.115517: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:50:15.738635: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:50:15.738759: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:50:15.738818: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-07-13 12:50:15.738870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9414 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3080 Ti, pci bus id: 0000:01:00.0, compute capability: 8.6
+2022-07-13 12:50:16.740543: I tensorflow/stream_executor/cuda/cuda_dnn.cc:369] Loaded cuDNN version 8005
+2022-07-13 12:50:19.212476: W tensorflow/stream_executor/gpu/asm_compiler.cc:231] Falling back to the CUDA driver for PTX compilation; ptxas does not support CC 8.6
+2022-07-13 12:50:19.212494: W tensorflow/stream_executor/gpu/asm_compiler.cc:234] Used ptxas at ptxas
+2022-07-13 12:50:19.213525: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Unimplemented: ptxas ptxas too old. Falling back to the driver to compile.
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2022-07-13 12:50:20.229652: I tensorflow/stream_executor/cuda/cuda_blas.cc:1760] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+All PyTorch model weights were used when initializing ConvMixer.
+All the weights of ConvMixer were initialized from the PyTorch model.
+
+Model: "conv_mixer"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+sequential (Sequential)      (1, 32, 32, 768)          116736    
+_________________________________________________________________
+blocks/0 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/1 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/2 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/3 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/4 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/5 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/6 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/7 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/8 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/9 (Block)             multiple                  635136    
+_________________________________________________________________
+blocks/10 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/11 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/12 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/13 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/14 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/15 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/16 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/17 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/18 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/19 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/20 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/21 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/22 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/23 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/24 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/25 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/26 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/27 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/28 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/29 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/30 (Block)            multiple                  635136    
+_________________________________________________________________
+blocks/31 (Block)            multiple                  635136    
+_________________________________________________________________
+global_average_pooling2d (Gl multiple                  0         
+_________________________________________________________________
+flatten (Flatten)            multiple                  0         
+_________________________________________________________________
+head (Dense)                 multiple                  769000    
+=================================================================
+Total params: 21,210,088
+Trainable params: 21,110,248
+Non-trainable params: 99,840
+_________________________________________________________________
+Datasets ready !
+Train set size :  (187938,) (187938, 2)
+Validation set size :  (46985,) (46985, 2)
+Test set size :  (20429,) (20429, 2)
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+conv_mixer (ConvMixer)       (None, 1000)              21210088  
+_________________________________________________________________
+dense (Dense)                (None, 2)                 2002      
+=================================================================
+Total params: 21,212,090
+Trainable params: 21,112,250
+Non-trainable params: 99,840
+_________________________________________________________________
+Epoch 1/15
+2022-07-13 12:50:23.023885: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+ 1961/11747 [====>.........................] - ETA: 47:23 - loss: 0.8079 - accuracy: 0.57312022-07-13 12:59:54.075313: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3280/11747 [=======>......................] - ETA: 40:53 - loss: 0.7449 - accuracy: 0.5955Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 36:24 - loss: 0.7193 - accuracy: 0.61112022-07-13 13:10:40.324297: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5846/11747 [=============>................] - ETA: 28:26 - loss: 0.6910 - accuracy: 0.63342022-07-13 13:18:34.772601: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7383/11747 [=================>............] - ETA: 21:01 - loss: 0.6751 - accuracy: 0.64832022-07-13 13:25:58.222768: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10456/11747 [=========================>....] - ETA: 6:12 - loss: 0.6568 - accuracy: 0.66692022-07-13 13:40:43.951344: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11535/11747 [============================>.] - ETA: 1:01 - loss: 0.6526 - accuracy: 0.6709Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.6519 - accuracy: 0.6714Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3679s 313ms/step - loss: 0.6519 - accuracy: 0.6714 - val_loss: 8051.8774 - val_accuracy: 0.3545
+Epoch 2/15
+ 1961/11747 [====>.........................] - ETA: 46:50 - loss: 0.6033 - accuracy: 0.71732022-07-13 14:01:03.999562: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3280/11747 [=======>......................] - ETA: 40:31 - loss: 0.5993 - accuracy: 0.7189Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 36:07 - loss: 0.5960 - accuracy: 0.72062022-07-13 14:11:47.199339: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:14 - loss: 0.5912 - accuracy: 0.72392022-07-13 14:19:39.005742: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:53 - loss: 0.5884 - accuracy: 0.72492022-07-13 14:27:00.417572: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:10 - loss: 0.5824 - accuracy: 0.72912022-07-13 14:41:42.904744: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.5813 - accuracy: 0.7295Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.5812 - accuracy: 0.7297Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3656s 311ms/step - loss: 0.5812 - accuracy: 0.7297 - val_loss: 38.9373 - val_accuracy: 0.6225
+Epoch 3/15
+ 1961/11747 [====>.........................] - ETA: 46:50 - loss: 0.5689 - accuracy: 0.73742022-07-13 15:02:00.010552: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:32 - loss: 0.5696 - accuracy: 0.7364Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:07 - loss: 0.5691 - accuracy: 0.73652022-07-13 15:12:43.198500: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:15 - loss: 0.5689 - accuracy: 0.73682022-07-13 15:20:35.757147: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:54 - loss: 0.5706 - accuracy: 0.73502022-07-13 15:27:57.484112: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:11 - loss: 0.5715 - accuracy: 0.73342022-07-13 15:42:40.481568: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.5723 - accuracy: 0.7325Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.5724 - accuracy: 0.7322Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3657s 311ms/step - loss: 0.5724 - accuracy: 0.7322 - val_loss: 0.6430 - val_accuracy: 0.6633
+Epoch 4/15
+ 1961/11747 [====>.........................] - ETA: 46:51 - loss: 0.5866 - accuracy: 0.71702022-07-13 16:02:57.770144: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:32 - loss: 0.5881 - accuracy: 0.7160Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 36:07 - loss: 0.5887 - accuracy: 0.71672022-07-13 16:13:40.616903: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:14 - loss: 0.5927 - accuracy: 0.71532022-07-13 16:21:32.486248: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7383/11747 [=================>............] - ETA: 20:52 - loss: 0.5986 - accuracy: 0.71402022-07-13 16:28:53.482828: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:10 - loss: 0.6060 - accuracy: 0.71322022-07-13 16:43:33.543371: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:01 - loss: 0.6077 - accuracy: 0.7127Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6081 - accuracy: 0.7124Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3650s 311ms/step - loss: 0.6081 - accuracy: 0.7124 - val_loss: 0.6230 - val_accuracy: 0.7102
+Epoch 5/15
+ 1961/11747 [====>.........................] - ETA: 46:41 - loss: 0.6223 - accuracy: 0.71012022-07-13 17:03:46.590400: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3280/11747 [=======>......................] - ETA: 40:23 - loss: 0.6212 - accuracy: 0.7115Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 36:00 - loss: 0.6212 - accuracy: 0.71112022-07-13 17:14:27.744352: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:09 - loss: 0.6212 - accuracy: 0.71062022-07-13 17:22:18.142475: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:49 - loss: 0.6213 - accuracy: 0.71022022-07-13 17:29:37.857350: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:09 - loss: 0.6210 - accuracy: 0.71062022-07-13 17:44:15.478619: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6210 - accuracy: 0.7103Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6211 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3640s 310ms/step - loss: 0.6211 - accuracy: 0.7101 - val_loss: 0.6210 - val_accuracy: 0.7102
+Epoch 6/15
+ 1961/11747 [====>.........................] - ETA: 46:29 - loss: 0.6211 - accuracy: 0.71012022-07-13 18:04:24.510449: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:14 - loss: 0.6202 - accuracy: 0.7115Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 35:50 - loss: 0.6203 - accuracy: 0.71112022-07-13 18:15:02.875798: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 28:01 - loss: 0.6205 - accuracy: 0.71062022-07-13 18:22:50.559950: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7383/11747 [=================>............] - ETA: 20:42 - loss: 0.6208 - accuracy: 0.71022022-07-13 18:30:08.131405: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:07 - loss: 0.6207 - accuracy: 0.71062022-07-13 18:44:41.383396: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6208 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6209 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3624s 309ms/step - loss: 0.6209 - accuracy: 0.7101 - val_loss: 0.6213 - val_accuracy: 0.7102
+Epoch 7/15
+ 1961/11747 [====>.........................] - ETA: 46:23 - loss: 0.6214 - accuracy: 0.70992022-07-13 19:04:47.400973: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:08 - loss: 0.6206 - accuracy: 0.7114Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:46 - loss: 0.6207 - accuracy: 0.71102022-07-13 19:15:24.036336: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:58 - loss: 0.6209 - accuracy: 0.71042022-07-13 19:23:11.567317: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:41 - loss: 0.6210 - accuracy: 0.71022022-07-13 19:30:28.489598: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:07 - loss: 0.6208 - accuracy: 0.71062022-07-13 19:45:01.774767: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6209 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6210 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3621s 308ms/step - loss: 0.6210 - accuracy: 0.7101 - val_loss: 0.6215 - val_accuracy: 0.7102
+Epoch 8/15
+ 1961/11747 [====>.........................] - ETA: 46:15 - loss: 0.6215 - accuracy: 0.71012022-07-13 20:05:06.543824: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:01 - loss: 0.6206 - accuracy: 0.7116Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:40 - loss: 0.6208 - accuracy: 0.71102022-07-13 20:15:41.583712: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:53 - loss: 0.6209 - accuracy: 0.71042022-07-13 20:23:27.971079: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:37 - loss: 0.6210 - accuracy: 0.71022022-07-13 20:30:43.742629: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.6209 - accuracy: 0.71062022-07-13 20:45:14.897175: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6209 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6211 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3612s 307ms/step - loss: 0.6211 - accuracy: 0.7101 - val_loss: 0.6212 - val_accuracy: 0.7102
+Epoch 9/15
+ 1961/11747 [====>.........................] - ETA: 46:17 - loss: 0.6212 - accuracy: 0.70992022-07-13 21:05:18.806564: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 40:03 - loss: 0.6200 - accuracy: 0.7117Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 35:41 - loss: 0.6203 - accuracy: 0.71102022-07-13 21:15:54.520722: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:55 - loss: 0.6205 - accuracy: 0.71052022-07-13 21:23:41.037541: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7383/11747 [=================>............] - ETA: 20:38 - loss: 0.6206 - accuracy: 0.71032022-07-13 21:30:57.507630: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.6206 - accuracy: 0.71062022-07-13 21:45:29.024433: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6207 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6208 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3615s 308ms/step - loss: 0.6208 - accuracy: 0.7101 - val_loss: 0.6212 - val_accuracy: 0.7102
+Epoch 10/15
+ 1961/11747 [====>.........................] - ETA: 46:11 - loss: 0.6212 - accuracy: 0.70992022-07-13 22:05:32.492107: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 39:58 - loss: 0.6203 - accuracy: 0.7115Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:37 - loss: 0.6205 - accuracy: 0.71092022-07-13 22:16:06.586662: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:51 - loss: 0.6206 - accuracy: 0.71052022-07-13 22:23:52.468138: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:36 - loss: 0.6208 - accuracy: 0.71032022-07-13 22:31:07.899859: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:05 - loss: 0.6206 - accuracy: 0.71062022-07-13 22:45:38.220834: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6207 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6209 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3608s 307ms/step - loss: 0.6209 - accuracy: 0.7101 - val_loss: 0.6212 - val_accuracy: 0.7102
+Epoch 11/15
+ 1961/11747 [====>.........................] - ETA: 46:09 - loss: 0.6214 - accuracy: 0.70952022-07-13 23:05:40.130230: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3280/11747 [=======>......................] - ETA: 39:56 - loss: 0.6202 - accuracy: 0.7116Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 35:35 - loss: 0.6205 - accuracy: 0.71092022-07-13 23:16:14.173702: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:50 - loss: 0.6206 - accuracy: 0.71052022-07-13 23:23:59.419703: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:35 - loss: 0.6208 - accuracy: 0.71022022-07-13 23:31:14.453806: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:05 - loss: 0.6207 - accuracy: 0.71062022-07-13 23:45:44.354372: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6207 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6209 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3606s 307ms/step - loss: 0.6209 - accuracy: 0.7101 - val_loss: 0.6213 - val_accuracy: 0.7102
+Epoch 12/15
+ 1961/11747 [====>.........................] - ETA: 46:09 - loss: 0.6215 - accuracy: 0.71002022-07-14 00:05:45.800788: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 39:56 - loss: 0.6206 - accuracy: 0.7114Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4201/11747 [=========>....................] - ETA: 35:35 - loss: 0.6207 - accuracy: 0.71092022-07-14 00:16:19.632503: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:50 - loss: 0.6207 - accuracy: 0.71052022-07-14 00:24:04.779395: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7383/11747 [=================>............] - ETA: 20:34 - loss: 0.6209 - accuracy: 0.71022022-07-14 00:31:20.021657: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:05 - loss: 0.6208 - accuracy: 0.71062022-07-14 00:45:49.224233: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6209 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6210 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3605s 307ms/step - loss: 0.6210 - accuracy: 0.7101 - val_loss: 0.6215 - val_accuracy: 0.7102
+Epoch 13/15
+ 1961/11747 [====>.........................] - ETA: 46:13 - loss: 0.6215 - accuracy: 0.70982022-07-14 01:05:51.615126: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 39:59 - loss: 0.6205 - accuracy: 0.7114Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:38 - loss: 0.6207 - accuracy: 0.71092022-07-14 01:16:26.094859: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:52 - loss: 0.6207 - accuracy: 0.71052022-07-14 01:24:12.183323: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:36 - loss: 0.6209 - accuracy: 0.71022022-07-14 01:31:27.457407: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:06 - loss: 0.6207 - accuracy: 0.71062022-07-14 01:45:57.902209: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6207 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6209 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3609s 307ms/step - loss: 0.6209 - accuracy: 0.7101 - val_loss: 0.6211 - val_accuracy: 0.7102
+Epoch 14/15
+ 1961/11747 [====>.........................] - ETA: 46:07 - loss: 0.6212 - accuracy: 0.70992022-07-14 02:05:59.714417: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 39:55 - loss: 0.6202 - accuracy: 0.7115Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:34 - loss: 0.6203 - accuracy: 0.71112022-07-14 02:16:32.976852: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:49 - loss: 0.6205 - accuracy: 0.71052022-07-14 02:24:18.237668: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:34 - loss: 0.6206 - accuracy: 0.71032022-07-14 02:31:32.998226: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:05 - loss: 0.6205 - accuracy: 0.71062022-07-14 02:46:02.197750: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6206 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11746/11747 [============================>.] - ETA: 0s - loss: 0.6207 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3603s 307ms/step - loss: 0.6207 - accuracy: 0.7101 - val_loss: 0.6210 - val_accuracy: 0.7102
+Epoch 15/15
+ 1961/11747 [====>.........................] - ETA: 46:11 - loss: 0.6212 - accuracy: 0.70992022-07-14 03:06:03.671400: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 3279/11747 [=======>......................] - ETA: 39:58 - loss: 0.6203 - accuracy: 0.7114Corrupt JPEG data: 451 extraneous bytes before marker 0xd9
+ 4200/11747 [=========>....................] - ETA: 35:37 - loss: 0.6205 - accuracy: 0.71102022-07-14 03:16:37.958851: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 5845/11747 [=============>................] - ETA: 27:51 - loss: 0.6208 - accuracy: 0.71042022-07-14 03:24:23.837735: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 7382/11747 [=================>............] - ETA: 20:36 - loss: 0.6209 - accuracy: 0.71022022-07-14 03:31:39.194234: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+10455/11747 [=========================>....] - ETA: 6:05 - loss: 0.6208 - accuracy: 0.71052022-07-14 03:46:09.675441: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+11534/11747 [============================>.] - ETA: 1:00 - loss: 0.6208 - accuracy: 0.7104Corrupt JPEG data: 646 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - ETA: 0s - loss: 0.6210 - accuracy: 0.7101Corrupt JPEG data: 6 extraneous bytes before marker 0xd9
+11747/11747 [==============================] - 3608s 307ms/step - loss: 0.6210 - accuracy: 0.7101 - val_loss: 0.6214 - val_accuracy: 0.7102
+1277/1277 [==============================] - 126s 99ms/step - loss: 0.6242 - accuracy: 0.7077
+test loss, test accuracy [0.6241851449012756, 0.7076704502105713]
